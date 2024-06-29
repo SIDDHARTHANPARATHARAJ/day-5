@@ -1,0 +1,77 @@
+//RESUME
+
+let myResume={
+    "basics": {
+      "name": "SIDDHARTHAN PARATHARAJ",
+      "email": "siddharthanparatharaj@gamil.com",
+      "phone": 9876543210,
+      "degree": "B.E",
+      "location": {
+        "address": "133/4,S.Athikombai,Oddanchatram",
+        "postalCode": 624619,
+        "city": "Dindigul",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+    },
+    "work": [
+      {
+        "company": "CRI PUMPS - Gransa Industries",
+        "position": "Assistant Engineer",
+        "startDate": "2019-06-06",
+        "endDate": "2021-10-05",
+      },
+    ],
+    "education": [
+      {
+        "institution": "DR.MCET",
+        "department": "Mechanical",
+        "batch start year": 2015,
+        "batch end year": 2019,
+        "gpa": 6.48,
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript,html",
+        "level": "beginer",
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,Enlish",
+      }
+    ],
+  }
+  console.log(myResume);
+
+  //QUESTION 2
+
+  //for loop
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+for (var key in json) {
+if (json.hasOwnProperty(key)) {
+  console.log(json[key].id);
+}
+}
+
+//for Of
+let text = "";
+for (let x of json[key].id) {
+ text += x; 
+}
+ console.log(text);
